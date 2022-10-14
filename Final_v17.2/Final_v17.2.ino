@@ -30,7 +30,7 @@ unsigned long t6 = 0;
 // DADOS DE CONEXÃO WI-FI, LOCAL DO EVENTO:
 /*
 String serverName = "http://192.168.0.1/";
-char *ssid = "OBSAT_WIFI";
+char *ssid = "OBSAT_WIFI"; 
 char *password = "OBSatZenith1000";
 */
 /* TEMPORIZADORES t0, t1, t2, t3, t4, t5:
