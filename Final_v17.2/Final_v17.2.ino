@@ -13,12 +13,12 @@
 #include <FS.h>                // biblioteca do leitor de cartão SD
 #include <SD.h>                // biblioteca do leitor de cartão SD
 #include <esp_sleep.h>         // biblioteca do modo hibernar do ESP32, deep-sleep
-// DADOS DE CONEXÃO WI-FI, LOCAL:
+// DADOS DE CONEXÃO WI-FI, LOCAL: descomente o trecho para realizar comunicação wi-fi, definindo também o nome da rede e senha
 /*
 String serverName = "https://obsat.org.br/teste_post/envio.php";      // servidor de testes da olimpíada
 char *ssid = "Nome da rede";                                          // nome da rede wi-fi local
 char *password = "Senha da rede";                                     // senha da rede wi-fi localW
-*/
+*/ 
 // PÁGINA WEB COM RECEPÇÃO DOS DADOS ENVIADOS:
 // https://obsat.org.br/teste_post/index.php                          // use este link para ver os dados enviados
 unsigned long t1 = 0;                // tempo inicial de tentativa de conexão wi-fi
@@ -180,6 +180,7 @@ void setup() {
   escreve_float(ALTURA_GPS);  // altura do GPS em metros (m)
   escreve_float(gps_pres);    // pressão calculada com altura do GPS em Pascal (Pa)
   // --- ETAPA DE ESCRITA NA SERIAL ---
+  // descomente o trecho para realizar a leitura no monitor serial
   /*
   Serial.println("Temperatura (bmp280): " + String(bmp_temp, 2));
   Serial.println("Pressão (bmp280): " + String(bmp_pres, 2));
@@ -203,6 +204,7 @@ void setup() {
   Serial.println("Boot: " + String(boot));
   */
   t0 = millis();  // grava tempo total desde que ligou o ESP32, leu dados + escrita
+  // descomente o trecho para realizar a comunicação wi-fi
   /*
   if (contador_1 == 23) {                                  // se chegou em 230000 milisegundos, inicializa wi-fi
     t1 = millis();                                         // grava tempo antes de iniciar wi-fi
@@ -417,6 +419,7 @@ String dados(int _e, int _b, float _t, float _p, String G, String A, String PL) 
   return dados;
   // São os dados enviados, também concatena o payload
 }
+// descomente o trecho para relizar a comunicação wi-fi
 /*
 void conexao(int estado) {                             // estado 0 = bmp, estado 1 = gps e mpu_temp
   String toSend;                                       // cria variável string que armazena mensagem a ser enviada
