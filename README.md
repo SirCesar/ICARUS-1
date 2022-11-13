@@ -1,5 +1,5 @@
 # ICARUS-1
-Cubesat project of ICARUS-1, available as a basic cubesat for new improvements and mission definition as well.
+Cubesat project: ICARUS-1, available as a basic cubesat for new improvements and mission definition as well.
 
 O código está configurado por padrão para escrever no cartão SD apenas, ou escrever + enviar os dados ao servidor de testes da OBSAT (por comunicação wi-fi)
 
