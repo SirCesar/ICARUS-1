@@ -1,7 +1,9 @@
 // Equipe: ICARUS, código do satélite: ICARUS-1
 // Autores: Adriano César de Sousa Pereira, Kayque Batista de Oliveira, João Pedro Bineli Alves, Kevin Cohin Hereda de Freitas Marinho
 // Instituição responsável: IFSP - Campus São João da Boa Vista, UNESP - Campus São João da Boa Vista
-// 
+// Código da 3ª fase disponível em: https://github.com/SirCesar/ICARUS-1/blob/main/Final_v17.2/Final_v17.2.ino
+// Código da 4ª fase disponível em: https://github.com/SirCesar/ICARUS-1/blob/main/Final_v19/Final_v19.ino
+//
 #include <WiFi.h>              // biblioteca do módulo wi-fi
 #include <HTTPClient.h>        // biblioteca de cliente http
 #include <TinyGPSPlus.h>       // biblioteca do GPS
