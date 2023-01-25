@@ -17,8 +17,8 @@
 //
 // DADOS DE CONEXÃO WI-FI, LOCAL:
 String serverName = "https://obsat.org.br/teste_post/envio.php";  // servidor de testes da olimpíada
-char *ssid = "A. César";                                          // nome da rede wi-fi local
-char *password = "123964578a";                                    // senha da rede wi-fi local
+char *ssid = "usuario";                                          // nome da rede wi-fi local
+char *password = "senha";                                    // senha da rede wi-fi local
 String conteudo_WiFi = "";
 int cont_conexao = 0;
 // PÁGINA WEB COM RECEPÇÃO DOS DADOS ENVIADOS:
